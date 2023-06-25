@@ -1,0 +1,97 @@
+:root {
+    --color-drkblue: hsl(218, 44%, 22%);
+    --color-grayblue: hsl(220, 15%, 55%);
+    --color-ltgray: hsl(212, 45%, 89%);
+    --color-white: hsl(0, 0%, 100%);
+
+    --ff-prim: 'Outfit', sans-serif;
+    --ff-body: var(--ff-prim);
+    --ff-heading: var(--ff-prim);
+
+    --fw-regular: 400; 
+    --fw-bold: 700;
+
+    --fs-heading: 25px; 
+    --fs-body: 15px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    background-color: var(--color-ltgray);
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    text-align: center;
+}
+
+.container {
+    background: var(--color-white);
+    display: block;
+    margin: 50% auto;
+    transform: translateY(-50%);
+    width: 80%;
+    max-width: 380px;
+    border-radius: 20px;
+}
+
+body .fs-heading {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-heading);
+    margin: auto;
+    padding: 0px 25px 0px 25px;
+}
+
+.qr-code {
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.qr-code img {
+    border-radius: 15px;
+}
+
+p {
+    padding: 15px 40px 50px 40px;
+    color: var(--color-grayblue);
+}
